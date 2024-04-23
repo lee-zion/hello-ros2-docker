@@ -1,2 +1,6 @@
 /examples
-/minimal_*
+build/
+install/
+log/
+.devcontainer/
+.github/
