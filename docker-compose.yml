@@ -1,0 +1,12 @@
+services:
+  talker-integration:
+    image: humble-zsh:0.4
+    volumes:
+      - ./minimal_publisher:/home/humble/ros_ws
+      - ./scripts/publisher_startup.bash:/home/humble/publisher_startup.bash
+    command: bash -c "source /home/humble/publisher_startup.bash"
+  listener-integration:
+    image: humble-zsh:0.4
+    command: ros2 run examples_rclpy_minimal_subscriber subscriber_member_function
+    depends_on:
+      - talker-integration

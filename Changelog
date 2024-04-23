@@ -1,0 +1,6 @@
+# Changelog
+
+- v0.1: set zsh and ROS2 alias based on image osrf/ros:humble-desktop-full-jammy
+- v0.2: set zsh theme to agnoster
+- v0.3: vulnerability fix
+- v0.4: default path to /workspaces in container
